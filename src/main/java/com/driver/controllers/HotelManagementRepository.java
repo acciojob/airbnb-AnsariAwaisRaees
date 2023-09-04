@@ -5,6 +5,7 @@ import com.driver.model.Facility;
 import com.driver.model.Hotel;
 import com.driver.model.User;
 import io.swagger.models.auth.In;
+import org.springframework.stereotype.Repository;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import java.awt.print.Book;
@@ -12,6 +13,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.UUID;
 
+@Repository
 public class HotelManagementRepository {
 
     HashMap<String, Hotel> hotelDB = new HashMap<>();
