@@ -15,11 +15,13 @@ public class HotelManagementService {
     HotelManagementRepository hotelManagementRepository;
 
     public String addHotel(Hotel hotel){
-        return hotelManagementRepository.addHotel(hotel);
+        String ans = hotelManagementRepository.addHotel(hotel);
+        return ans;
     }
 
     public Integer addUser(User user){
-        return hotelManagementRepository.addUser(user);
+        int ans = hotelManagementRepository.addUser(user);
+        return ans;
     }
 
     public String getHotelWithMostFacilities(){

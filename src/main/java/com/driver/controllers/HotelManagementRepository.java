@@ -6,7 +6,7 @@ import com.driver.model.Hotel;
 import com.driver.model.User;
 import io.swagger.models.auth.In;
 import org.springframework.stereotype.Repository;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RequestBody;
 
 import java.awt.print.Book;
 import java.util.HashMap;
@@ -32,7 +32,7 @@ public class HotelManagementRepository {
         return "SUCCESS";
     }
 
-    public Integer addUser(@RequestParam User user) {
+    public Integer addUser(@RequestBody User user) {
         int key = user.getaadharCardNo();
 
         userDB.put(key, user);
