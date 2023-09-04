@@ -21,7 +21,7 @@ import java.util.UUID;
 @RequestMapping("/hotel")
 public class HotelManagementController {
 
-    HotelManagementService hotelManagementService;
+    HotelManagementService hotelManagementService = new HotelManagementService();
 
     @PostMapping("/add-hotel")
     public String addHotel(@RequestBody Hotel hotel){
