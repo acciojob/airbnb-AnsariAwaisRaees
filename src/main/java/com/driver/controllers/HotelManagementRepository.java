@@ -25,6 +25,8 @@ public class HotelManagementRepository {
 
         if (key == null)
             return "FAILURE";
+        else if(hotelDB.containsKey(key))
+            return "FAILURE";
         else
             hotelDB.put(key, hotel);
         return "SUCCESS";
